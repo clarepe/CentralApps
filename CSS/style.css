@@ -26,9 +26,11 @@ header {
     max-width: 1000px;
     margin-bottom: 20px;
 }
-
+.grid-item{
+   margin-left: 95px;
+}
 .grid-item {
-    position: relative;
+    position:relative;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -65,9 +67,10 @@ header {
     left: -200px; /* Esconde o menu à esquerda da tela */
     width: 200px;
     height: 100%;
-    background-color: #333;
+    background-color: #3333338f;
     padding: 10px 0;
     transition: left 0.3s ease; /* Transição suave ao abrir/fechar */
+    
 }
 
 /* Classe que mostra o menu */
@@ -114,11 +117,13 @@ header {
     display: block;
     padding: 10px;
     transition: background-color 0.3s;
+    
 }
 
 /* Estilo ao passar o mouse sobre os links */
 .meunuLateral a:hover {
-    background-color: #cc0000;
+    background-color: #ffffff;
+    color: #ff0000;
 }
 
 
