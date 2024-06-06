@@ -5,7 +5,7 @@
     left: -200px; /* Esconde o menu à esquerda da tela */
     width: 200px;
     height: 100%;
-    background-color: #ffffff8f;
+    background-color: #ffffff;
     padding: 10px 0;
     transition: left 0.3s ease; /* Transição suave ao abrir/fechar */
     box-shadow: 4px 4px 15px #00000050;
@@ -63,5 +63,10 @@
 .meunuLateral a:hover {
     background-color: #ffffff;
     color: #ff0000;
+}
+.imgHambuguer{
+    width: 200px;
+    height: 120px;
+    margin-top: 310px;
 }
 
