@@ -1,81 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-tema="temaPrincipal">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Central App's</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="IMAGENS/Icons/icons8-day-and-night-48 (1).png">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/menu-Hamburguer.css">
+  </head>
+  <body>
     <header>
-        <h1 id="h1-principal">Central App's</h1>
-        <h2 id="h2-principal">Selecione seu app</h2>
+      <div class="cor-de-fundo">
+        <img src="IMAGENS/Central/Shot Y2K.png" alt="" class="imagem-H1" />
+      
+
+      <button type="button" id="trocaTema">
+        
+        <i class="IMAGENS/Icons/icons8-day-and-night-48 (1).png"></i> Troca Tema 
+      </button>
+      <!-- <h1 id="h1-principal">Central App's</h1> -->
+     
+    </div>
+    <h2 id="h2-principal">Selecione seu app</h2>
     </header>
     <main>
-        <div class="grid-container">
-            <div class="grid-item">
-                <a href="calculadora_de_IMC.html">
-                    <img src="IMAGENS/Calcula IMC/Slide2.PNG" alt="Calcula IMC" class="imagem">
-                </a>
-            </div>
-            <div class="grid-item">
-                <a href="conversor_de_Temperatura.html">
-                    <img src="IMAGENS/Temperatura/Slide1.PNG" alt="Conversor de Temperatura" class="imagem">
-                </a>
-            </div>
-            <div class="grid-item">
-                <a href="Tipo_de_um_triângulo.html">
-                    <img src="IMAGENS/Tipos de Triângulos/Slide1.PNG" alt="Tipos de Triângulos" class="imagem">
-                </a>
-            </div>
-            <div class="grid-item">
-                <a href="desconto_Funcionario.html">
-                    <img src="IMAGENS/Descontos da Loja/Slide1.PNG" alt="Desconto Funcionário" class="imagem">
-                </a>
-            </div>
-            <div class="grid-item">
-                <a href="jogoDeFutebol.html">
-                    <img src="IMAGENS/Placar do Jogo/Slide1.PNG" alt="Placar do Jogo" class="imagem">
-                </a>
-            </div>
-            <div class="grid-item">
-                <a href="buscaNome.html">
-                    <img src="IMAGENS/Busca Nome/Slide1.PNG" alt="Busca Nome" class="imagem">
-                </a>
-            </div>
-            <div class="grid-item">
-                <a href="PostodeGasolina.html">
-                    <img src="IMAGENS/Desconto de Combustivel/Slide1.PNG" alt="Posto Senai Ipiranga" class="imagem">
-                </a>
-            </div>
-            <div class="grid-item">
-                <a href="Taxa-de-Natalidade-e-Mortalidade.html">
-                    <img src="IMAGENS/Taxas de Crescimento/Slide1.PNG" alt="Taxas de Crescimento Vegetativo" class="imagem">
-                </a>
-            </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <a href="calculadora_de_IMC.html">
+            <img
+              src="IMAGENS/Calcula IMC/Slide2.PNG"
+              alt="Calcula IMC"
+              class="imagem"
+            />
+          </a>
         </div>
-        <div>
-            <button type="button" id="trocaTema">Tema</button>
+        <div class="grid-item">
+          <a href="conversor_de_Temperatura.html">
+            <img
+              src="IMAGENS/Temperatura/Slide1.PNG"
+              alt="Conversor de Temperatura"
+              class="imagem"
+            />
+          </a>
         </div>
-        <button id="toggleMenu" class="toggle-btn">☰</button>
-    <div class="meunuLateral" id="meunuLateral">
+        <div class="grid-item">
+          <a href="Tipo_de_um_triângulo.html">
+            <img
+              src="IMAGENS/Tipos de Triângulos/Slide1.PNG"
+              alt="Tipos de Triângulos"
+              class="imagem"
+            />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="desconto_Funcionario.html">
+            <img
+              src="IMAGENS/Descontos da Loja/Slide1.PNG"
+              alt="Desconto Funcionário"
+              class="imagem"
+            />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="jogoDeFutebol.html">
+            <img
+              src="IMAGENS/Placar do Jogo/Slide1.PNG"
+              alt="Placar do Jogo"
+              class="imagem"
+            />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="buscaNome.html">
+            <img
+              src="IMAGENS/Busca Nome/Slide1.PNG"
+              alt="Busca Nome"
+              class="imagem"
+            />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="PostodeGasolina.html">
+            <img
+              src="IMAGENS/Desconto de Combustivel/Slide1.PNG"
+              alt="Posto Senai Ipiranga"
+              class="imagem"
+            />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="Taxa-de-Natalidade-e-Mortalidade.html">
+            <img
+              src="IMAGENS/Taxas de Crescimento/Slide1.PNG"
+              alt="Taxas de Crescimento Vegetativo"
+              class="imagem"
+            />
+          </a>
+        </div>
+      </div>
+
+      <button id="toggleMenu" class="toggle-btn">☰</button>
+      <div class="meunuLateral" id="meunuLateral">
         <nav>
-            <ul>
-                <li><a href="calculadora_de_IMC.html">Calcula IMC</a></li>
-                <li><a href="conversor_de_Temperatura.html">Conversor de Temperatura</a></li>
-                <li><a href="Tipo_de_um_triângulo.html">Tipos Triangulos</a></li>
-                <li><a href="desconto_Funcionario.html">Desconto Funcionario</a></li>
-                <li><a href="jogoDeFutebol.html">Placar do Jogo</a></li>
-                <li><a href="buscaNome.html">Busca Nome</a></li>
-                <li><a href="PostodeGasolina.html">Posto Senai Ipiranga</a></li>
-                <li><a href="Taxa-de-Natalidade-e-Mortalidade.html">Taxas de crescimento vegetativo (CV)</a></li>
-            </ul>
+          <ul>
+            <li><a href="calculadora_de_IMC.html">Calcula IMC</a></li>
+            <li>
+              <a href="conversor_de_Temperatura.html"
+                >Conversor de Temperatura</a
+              >
+            </li>
+            <li><a href="Tipo_de_um_triângulo.html">Tipos Triangulos</a></li>
+            <li>
+              <a href="desconto_Funcionario.html">Desconto Funcionario</a>
+            </li>
+            <li><a href="jogoDeFutebol.html">Placar do Jogo</a></li>
+            <li><a href="buscaNome.html">Busca Nome</a></li>
+            <li><a href="PostodeGasolina.html">Posto Senai Ipiranga</a></li>
+            <li>
+              <a href="Taxa-de-Natalidade-e-Mortalidade.html"
+                >Taxas de crescimento vegetativo (CV)</a
+              >
+            </li>
+          </ul>
         </nav>
-    </div>
-    <script src="JAVASCRIPT/scripts.js"></script>
+      </div>
+      <script src="JAVASCRIPT/scripts.js"></script>
     </main>
     <footer>
-        <p>Página criada em 2024 por Claudiney Clayton, estudante do curso de Desenvolvedor Front-end no <b>SENAI-SP - Conde José Vicente de Azevedo pela Ford-Enter</b>&reg;</p>
+      <p>
+        Página criada em 2024 por Claudiney Clayton, estudante do curso de
+        Desenvolvedor Front-end no
+        <b>SENAI-SP - Conde José Vicente de Azevedo pela Ford-Enter</b>&reg;
+      </p>
     </footer>
-</body>
+  </body>
 </html>

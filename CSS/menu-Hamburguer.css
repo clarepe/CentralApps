@@ -1,0 +1,67 @@
+/* Estilo para o contêiner do menu lateral */
+.meunuLateral {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Esconde o menu à esquerda da tela */
+    width: 200px;
+    height: 100%;
+    background-color: #ffffff8f;
+    padding: 10px 0;
+    transition: left 0.3s ease; /* Transição suave ao abrir/fechar */
+    box-shadow: 4px 4px 15px #00000050;
+    
+}
+
+/* Classe que mostra o menu */
+.meunuLateral.open {
+    left: 0; /* Move o menu para dentro da tela */
+}
+
+/* Estilo do botão de toggle */
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 99; /* Garante que o botão fique acima do menu */
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Classe para esconder o botão de toggle */
+.toggle-btn.hidden {
+    display: none;
+}
+
+/* Remove os marcadores de lista e padding */
+.meunuLateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilização dos itens da lista */
+.meunuLateral li {
+    margin-bottom: 10px;
+}
+
+/* Estilização dos links */
+.meunuLateral a {
+    text-decoration: none;
+    background-color: #ff0000;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+    
+}
+
+/* Estilo ao passar o mouse sobre os links */
+.meunuLateral a:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+}
+
