@@ -6,7 +6,7 @@
   text-transform: capitalize;
   outline: none;
   list-style: none;
-  transition: 0.2 linear;
+  transition: 0.2s linear;
 }
 
 body {
@@ -21,26 +21,27 @@ body {
 .cor-de-fundo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 1,5rem;
-  padding-bottom: 1.5rem;
-  
+  justify-content: flex-start;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-/*  */
-.imagem-H1 {
-  width: 15%;
-  margin-top: 13px;
-  margin-right: 1200px;
-}
-#h2-principal{
-    color: #f80000;
-    font-size: 30px;
-    margin-top: 20px;
-    text-align: center;
-     box-shadow: 4px ,0px 5px #00000009; 
-    border-bottom: 2px solid red;
-    
 
+.imagem-H1 {
+  width: 150px;
+  height: auto;
+  margin-top: 13px;
+  margin-right: auto;
+}
+
+#h2-principal {
+  color: #f80000;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 4px 0px 5px #00000009; 
+  border-bottom: 2px solid red;
 }
 
 #trocaTema {
@@ -51,33 +52,24 @@ body {
   background-color: #fffffff8;
   border-color: #ffffff15;
   border-radius: 1px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin: 20px 0 20px 20px;
 }
-.cor-de-fundo {
-  
-  margin: 0 auto;
-  max-width: 1499px;
-}
- 
+
 .grid-container {
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
   width: 100%;
   max-width: 1000px;
-  margin-bottom: 20px;
-  margin-top: 120px;
+  margin: 20px 0;
 }
-.grid-item {
-  margin-left: 7px;
-}
+
 .grid-item {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 4px 4px 15px #00000050;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 .grid-item a {
@@ -95,9 +87,10 @@ body {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.grid-item img:hover {
+.grid-item:hover {
   transform: scale(1.1);
-  filter: brightness(0.8);
+  z-index: 10; /* Eleva o item acima dos demais para o efeito de zoom */
+  box-shadow: 8px 8px 20px #00000070;
 }
 
 footer {
@@ -106,5 +99,53 @@ footer {
   background-color: #333;
   color: #fff;
   width: 100%;
-  margin: 450px;
+  margin-top: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .imagem-H1 {
+    width: 40%;
+  }
+
+  #h2-principal {
+    font-size: 24px;
+  }
+
+  #trocaTema {
+    font-size: 14px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cor-de-fundo {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .imagem-H1 {
+    width: 70%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #h2-principal {
+    font-size: 20px;
+  }
+
+  #trocaTema {
+    font-size: 12px;
+    margin-left: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
 }
